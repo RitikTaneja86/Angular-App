@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PostsListComponent } from './posts-list/posts-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PostsListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
